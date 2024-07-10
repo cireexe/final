@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+
+<body>
+
+    <header class="header">
+        <nav class="navegacion">
+            <a class="animate__animated animate__bounce">
+                <i class="fas fa-film" aria-hidden="true"></i>
+                <img class="logo" src="cinema.png">
+                <span>CAC-MOVIES</span>
+            </a>
+          
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="index.html">Tendencias</a></li>
+                <li class="listaItem"><a class="linkNav" href="registro.php">Registrarse</a></li>
+                <li class="listaItem"><a class="linkNav iniciarSesion" href="iniciodesesion.html">Iniciar Sesión</a></li>
+                <li class="listaItem"><a class="linkNav api" href="api.html">API</a></li>
+                
+            </ul>
+           </nav>
+    </header>
+
+    
+     <main id="main" class="main"> 
+                <section class="seccionprimaria">
+                <h1 class="tituloprincipal">Peliculas y Series ilimitadas<br> en un solo lugar</h1>
+                <h2 class="titulosecunadario">Disfruta donde quieras.<br> Cancela en cualquier momento</h2>
+                <a id="linkNav" href="registro.php">Registrarse</a>
+                </section>
+     
+              <section class="buscadorprincipal">
+               <h2 class="quebuscas" >¿Que estás buscando?</h2>
+               <form class="buscapeli">
+                <input class="inputBuscador" type="text" placeholder="Buscar..." id="buscar" name="buscar">
+                <input class="botonbuscar" type="submit" value="Buscar">
+            </form>
+                
+            </section>
+            <hr>
+            
+            <section id="tendencias" class="peliculasTendencia">
+                <h3 class="tituloSection">Las tendencias de hoy</h3>
+                <div class="peliculas" id="tendenciasContainer">
+        <img src="assets/img/mario.jpg" alt="peli1" width="250" height="350" class="borderimage">
+        <img src="assets/img/barbie.jpg" height="350" class="borderimage">
+        <img src="assets/img/caracortada.jpg" alt="it" width="250" height="350" class="borderimage">
+        <img src="assets/img/deadpool.jpg" alt="simios" width="250" height="350" class="borderimage">
+        <img src="assets/img/el guason.jpeg" alt="guason" width="250" height="350" class="borderimage">
+        <img src="assets/img/iroman2.jpg" alt="iroman2" width="250" height="350" class="borderimage">
+        <img src="assets/img/galaxiaguar.jpeg" alt="galaxiaguar" width="250" height="350" class="borderimage">
+        <img src="assets/img/simios.jpg" alt="iroman2" width="250" height="350" class="borderimage">
+        <img src="assets/img/matrix.jpg" alt="iroman2" width="250" height="350" class="borderimage">
+        </div>
+        <button class="btn">Anterior</button>  
+        <button class="btn">Siguiente</button>
+    </section>
+    <hr class="mi-hr">
+
+    <section class="piculasAclamadas">
+        <h3 class="tituloSection">Las más aclamadas</h3>
+        <div class="aclamadas" id="aclamadasContainer">
+         <img src="assets/img/kunfupanda.webp" alt="kunfupanda" width="250" height="350" class="imagenacla">
+        <img src="assets/img/it.webp" alt="it" width="250" height="350" class="imagenacla">
+        <img src="assets/img/aqueman.jfif" alt="aqueman" width="250" height="350" class="imagenacla">
+        <img src="assets/img/simios.jpg" alt="simios" width="250" height="350" class="imagenacla">
+        <img src="assets/img/beekeeper.jfif" alt="beekeeper" width="250" height="350" class="imagenacla">
+        <img src="assets/img/malefica.jfif" alt="malefica" width="250" height="350" class="imagenacla">
+        <img src="assets/img/poorth.jpg" alt="poorth" width="250" height="350" class="imagenacla">
+        <img src="assets/img/up.jfif" alt="up" width="250" height="350" class="imagenacla">
+        <img src="assets/img/avatar.jpg" alt="avatar" width="250" height="350" class="imagenacla">
+        </div>
+       </section>
+      
+
+    </main>
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
+                <li class="listaItem"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
+            </ul>
+        </nav>
+        <a href="#main" class="flechaArriba">
+            <img src="icons8-flecha-arriba-50.png" alt="ir arriba">
+        </a>  
+       </footer>
+      
+<script src="api.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
